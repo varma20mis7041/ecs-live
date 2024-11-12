@@ -4,7 +4,10 @@ const cors = require('cors');
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+
+// Allow only your frontend domain
+app.use(cors({ origin: 'https://ecs-frontend.onrender.com' }));
+
 
 const productRoutes = require('./routes/productRoutes');
 
