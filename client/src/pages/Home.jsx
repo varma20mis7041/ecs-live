@@ -56,7 +56,7 @@ useEffect(()=>{
 },[])
 
 const fetchProducts = async() => {
-    const response = await fetch("http://localhost:9000/products/all");
+    const response = await fetch("https://ecs-live-backend.onrender.com/products/all");
     const data = await response.json(); 
     console.log("products", data);
     updateCardItems(data)
