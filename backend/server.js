@@ -17,8 +17,8 @@ app.use('/products', productRoutes);
 const port = process.env.PORT ||9000;
 
 const initializeDBAndServer = async () => {
-    const username = encodeURIComponent("bhargavcoding");
-    const password = encodeURIComponent("bv@9177221342");
+    const username = encodeURIComponent("******");
+    const password = encodeURIComponent("********");
     const uri = `mongodb+srv://${username}:${password}@cluster0.ki5m4.mongodb.net/ecs?retryWrites=true&w=majority&tls=true&tlsInsecure=true&appName=Cluster0`;
 
 
