@@ -15,11 +15,11 @@ const productSchema = new mongoose.Schema({
     },
     price: {
         type: Number,
-        required: true // Fixed typo here
+        required: true 
     }
 });
 
-// Export the model, not just the schema
+
 const Product = mongoose.model("Product", productSchema);
 
 module.exports = Product;
