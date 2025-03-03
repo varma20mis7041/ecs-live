@@ -5,13 +5,13 @@ const app = express();
 
 app.use(express.json());
 
-// Allow only your frontend domain
+
 app.use(cors({ origin: 'https://ecs-frontend.onrender.com' }));
 
 
 const productRoutes = require('./routes/productRoutes');
 
-// No need for bodyParser.json if express.json is used
+
 app.use('/products', productRoutes);
 
 const port = process.env.PORT ||9000;
